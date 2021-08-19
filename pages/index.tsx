@@ -4,7 +4,7 @@ const Home: NextPage = () => {
   return (
     <>
     <div>
-      <h1>Hello World!</h1>
+      <h1 className="m-8 text-2xl">Hello World!</h1>
     </div>
     </>
   )
