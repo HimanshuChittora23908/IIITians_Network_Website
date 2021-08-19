@@ -8,6 +8,9 @@ module.exports = {
           1000 : "0B0B0B",
         },
       },
+      fontFamily: {
+        'righteous': ['Righteous', 'cursive'],
+      }
     },
   },
   variants: {
