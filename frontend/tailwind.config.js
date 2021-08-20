@@ -5,12 +5,15 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          1000 : "0B0B0B",
+          'bg_color' : "0B0B0B",
         },
       },
       fontFamily: {
         'righteous': ['Righteous', 'cursive'],
         'rajdhani': ['Rajdhani', 'sans-serif'],
+      },
+      boxShadow: {
+        'button_custom': '4px 4px 8px rgba(255, 255, 255, 0.25)'
       }
     },
   },
