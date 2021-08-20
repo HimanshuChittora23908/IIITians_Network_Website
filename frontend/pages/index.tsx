@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import isometric_image from "../images/isometric_Image.png";
 import info from "../images/info.png";
-import { Performance, WorkingFields } from "../components/Home";
+import { Performance, WorkingFields, Thinking } from "../components/Home";
 import triangle_right from "../images/triangle_right.png";
 
 const Home: NextPage = () => {
@@ -28,6 +28,7 @@ const Home: NextPage = () => {
       </div>
       <Performance />
       <WorkingFields />
+      <Thinking />
     </>
   );
 };
