@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Image from "next/image"
-import isometric_image from "../images/Isometric_Image.png"
+import isometric_image from "../images/isometric_Image.png"
 import info from "../images/info.png"
+import Performance from './performance'
 
 const Home: NextPage = () => {
   return (
@@ -21,6 +22,8 @@ const Home: NextPage = () => {
         <Image src={isometric_image} alt="Isometric_Image" />
       </div>
     </div>
+
+    <Performance />
     </>
   )
 }
