@@ -1,3 +1,4 @@
 import Performance from "./performance";
+import Thinking from "./thinking";
 
-export { Performance }
+export { Performance, Thinking }
