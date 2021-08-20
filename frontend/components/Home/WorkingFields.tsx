@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import webImage from "../../images/Frame_2.png";
 
-export const WorkingFields = () => {
+const WorkingFields = () => {
   const [count, setcount] = useState(1);
 
   return (
@@ -83,7 +83,7 @@ export const WorkingFields = () => {
                     <div className="text-white text-5xl font-semibold">
                       #Web Development
                     </div>
-                    <div className="text-white text-xl mt-4 font-light">
+                    <div className="text-white text-2xl mt-4 font-light">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Elit eget et sed eu hendrerit nisi. Sed lacinia aenean
                       molestie ut varius et a. Libero morbi venenatis, faucibus
@@ -109,7 +109,7 @@ export const WorkingFields = () => {
                     <div className="text-white text-5xl font-semibold">
                       #App Development
                     </div>
-                    <div className="text-white text-xl mt-4 font-light">
+                    <div className="text-white text-2xl mt-4 font-light">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Elit eget et sed eu hendrerit nisi. Sed lacinia aenean
                       molestie ut varius et a. Libero morbi venenatis, faucibus
@@ -134,7 +134,7 @@ export const WorkingFields = () => {
                     <div className="text-white text-5xl font-semibold">
                       #Game Development
                     </div>
-                    <div className="text-white text-xl mt-4 font-light">
+                    <div className="text-white text-2xl mt-4 font-light">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Elit eget et sed eu hendrerit nisi. Sed lacinia aenean
                       molestie ut varius et a. Libero morbi venenatis, faucibus
@@ -159,7 +159,7 @@ export const WorkingFields = () => {
                     <div className="text-white text-5xl font-semibold">
                       #Finance & Stock Market
                     </div>
-                    <div className="text-white text-xl mt-4 font-light">
+                    <div className="text-white text-2xl mt-4 font-light">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Elit eget et sed eu hendrerit nisi. Sed lacinia aenean
                       molestie ut varius et a. Libero morbi venenatis, faucibus
@@ -183,3 +183,6 @@ export const WorkingFields = () => {
     </div>
   );
 };
+
+
+export default WorkingFields

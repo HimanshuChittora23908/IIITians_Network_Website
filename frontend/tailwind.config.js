@@ -12,6 +12,9 @@ module.exports = {
         lime: {
           1000: "#00FF00"
         },
+        orange: {
+          1000: "#FFA500"
+        }
       },
       fontFamily: {
         'righteous': ['Righteous', 'cursive'],

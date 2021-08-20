@@ -3,19 +3,18 @@ import Link from "next/link";
 import Image from "next/image";
 import performance from "../../images/performance.png";
 
-const Performance: NextPage = () => {
+const Performance = () => {
   return (
     <>
-      <div>
+      <div className="ml-32 my-12">
         <div>
           <Image src={performance} alt="performance" />
         </div>
-
-        <div className="ml-32 text-red-600 text-2xl font-bold">Performance</div>
-        <div className="ml-32 mt-4 text-5xl md:text-6xl font-bold pr-40">
+        <div className=" text-red-600 text-2xl font-bold">Performance</div>
+        <div className=" mt-4 text-5xl md:text-6xl font-bold pr-40">
           <h1>Helping students to increase productivity.</h1>
         </div>
-        <div className="ml-32 mt-4 text-base md:text-xl xl:text-2xl pr-40 xl:pr-96">
+        <div className=" mt-4 text-base md:text-xl xl:text-2xl pr-40 xl:pr-96">
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
             temporibus sint consequatur deleniti provident, necessitatibus
@@ -30,7 +29,7 @@ const Performance: NextPage = () => {
             sapiente pariatur.
           </p>
         </div>
-        <div className="flex ml-32 mt-4 mb-24 text-xl gap-4 justify-left">
+        <div className="flex  mt-4 mb-12 text-xl gap-4 justify-left">
           <div className="text-red-600">
             <h2>
               <Link href="#">Our Team</Link>
