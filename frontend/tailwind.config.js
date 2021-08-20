@@ -10,6 +10,7 @@ module.exports = {
       },
       fontFamily: {
         'righteous': ['Righteous', 'cursive'],
+        'rajdhani': ['Rajdhani', 'sans-serif'],
       }
     },
   },
