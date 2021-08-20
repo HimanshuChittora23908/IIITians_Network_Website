@@ -3,7 +3,6 @@ import Image from "next/image"
 import isometric_image from "../images/isometric_Image.png"
 import info from "../images/info.png"
 import triangle_right from "../images/triangle_right.png"
-import triangle_right_black from "../images/triangle_right_black.png"
 
 const Home: NextPage = () => {
   return (
