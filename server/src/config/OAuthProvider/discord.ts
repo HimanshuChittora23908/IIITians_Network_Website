@@ -14,8 +14,8 @@ const scopes = ['identify', 'email'];
 
 export default function passportDiscordConfig(): void{
     passport.use(new Strategy({
-        clientID: '878241259523825754',
-        clientSecret: 'HD-G69i9WyHgA-ZUuYhF5AhGqgzxjkos',
+        clientID: process.env.CLIENT_ID_DISCORD as string,
+        clientSecret: process.env.CLIENT_SECRET_DISCORD as string,
         callbackURL: 'http://localhost:4000/auth/discord/callback',
         scope: scopes,
     },

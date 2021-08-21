@@ -11,8 +11,8 @@ passport.deserializeUser((user: Express.User, done) => {
 
 export default function passportGithubConfig(): void{
     passport.use(new Strategy({
-        clientID: "7ee42823ac86f41ddfb8",
-        clientSecret: "f79ec56357b513ebb004779c77c599a63b749378",
+        clientID: process.env.CLIENT_ID_GITHUB as string,
+        clientSecret: process.env.CLIENT_SECRET_GITHUB as string,
         callbackURL: "http://localhost:4000/auth/github/callback",
         // passReqToCallback: true
       },

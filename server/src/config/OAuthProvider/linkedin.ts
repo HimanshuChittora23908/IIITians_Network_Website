@@ -11,8 +11,8 @@ passport.deserializeUser((user: Express.User, done) => {
 
 export default function passportLinkedinConfig(): void{
     passport.use(new Strategy({
-        clientID: "86tqswtqoxsj5e",
-        clientSecret: "JdnQNvMvbCZ3B5Ul",
+        clientID: process.env.CLIENT_ID_LINKEDIN as string,
+        clientSecret: process.env.CLIENT_SECRET_LINKEDIN as string,
         callbackURL: "http://localhost:4000/auth/linkedin/callback",
         scope: ['r_emailaddress', 'r_liteprofile']
       }, function(accessToken, refreshToken, profile, cb) {

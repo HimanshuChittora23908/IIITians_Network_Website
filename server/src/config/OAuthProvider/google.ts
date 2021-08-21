@@ -12,8 +12,8 @@ passport.deserializeUser((user: Express.User, done) => {
 
 export default function googlePassportConfig(): void{
     passport.use(new Strategy({
-        clientID: "443599361185-nmgs3886hdttebhlacum12ib2r103349.apps.googleusercontent.com",
-        clientSecret: "E5RfuMR57Xx9kUsoiX-yIvvj",
+        clientID: process.env.CLIENT_ID_GOOGLE as string,
+        clientSecret: process.env.CLIENT_SECRET_GOOGLE as string,
         callbackURL: "http://localhost:4000/auth/google/callback",
       },
       function(accessToken, refreshToken,profile, cb) {
