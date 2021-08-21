@@ -1,6 +1,7 @@
 {
   "name": "iiit-network-website-server",
   "version": "1.0.0",
+  "license": "MIT",
   "devDependencies": {
     "@types/connect-redis": "^0.0.17",
     "@types/cors": "^2.8.12",
@@ -8,6 +9,12 @@
     "@types/express-session": "^1.17.4",
     "@types/ioredis": "^4.26.7",
     "@types/node": "^16.6.2",
+    "@types/passport": "^1.0.7",
+    "@types/passport-discord": "^0.1.4",
+    "@types/passport-facebook": "^2.1.11",
+    "@types/passport-github": "^1.1.6",
+    "@types/passport-google-oauth20": "^2.0.9",
+    "@types/passport-linkedin-oauth2": "^1.5.3",
     "@typescript-eslint/eslint-plugin": "^4.29.2",
     "@typescript-eslint/parser": "^4.29.2",
     "eslint": "^7.32.0",
@@ -21,17 +28,26 @@
     "class-validator": "^0.13.1",
     "connect-redis": "^6.0.0",
     "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "express-session": "^1.17.2",
     "graphql": "15.5.1",
+    "https": "^1.0.0",
     "ioredis": "^4.27.8",
     "mongoose": "^5.13.7",
+    "passport": "^0.4.1",
+    "passport-discord": "^0.1.4",
+    "passport-facebook": "^3.0.0",
+    "passport-github": "^1.1.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-linkedin-oauth2": "^2.0.0",
     "reflect-metadata": "^0.1.10",
     "type-graphql": "^1.1.1"
   },
   "scripts": {
     "start": "ts-node-dev --respawn src/index.ts",
     "build": "tsc",
+    "dev": "ts-node src/index.ts",
     "lint": "eslint . --fix --ext .ts"
   }
 }
