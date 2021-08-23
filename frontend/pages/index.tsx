@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Image from "next/image";
 import isometric_image from "../images/isometric_Image.png";
 import info from "../images/info.png";
-import { Performance, WorkingFields, Thinking, Community, StartPage } from "../components/Home";
+import { Performance, WorkingFields, Thinking, Community, StartPage, Statistics } from "../components/Home";
 import triangle_right from "../images/triangle_right.png";
 
 const Home: NextPage = () => {
@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <WorkingFields />
       <Thinking />
       <Community />
+      <Statistics />
     </>
   );
 };
