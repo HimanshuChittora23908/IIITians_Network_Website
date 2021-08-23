@@ -1,6 +1,5 @@
 import { connect, ConnectionOptions } from 'mongoose';
 
-// const mongoUri = process.env.MONGO_URI as string;
 const mongoUri = process.env.MONGO_URI as string;
 
 const conOptions: ConnectionOptions = {

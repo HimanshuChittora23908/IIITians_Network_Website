@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import performance from "../../images/performance.svg";
 
-const Performance: NextPage = () => {
+const Performance = () => {
   return (
     <>
       <div className="my-24">

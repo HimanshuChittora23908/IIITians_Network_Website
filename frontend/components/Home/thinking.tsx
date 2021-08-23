@@ -29,18 +29,18 @@ const Thinking: NextPage = () => {
         </button>
         </div>
         <div className="flex ml-32 text-2xl gap-4 justify-left">
-            <div className="text-blue-1000 font-medium text-2xl">
+            <div className="text-blue-1000 font-medium text-3xl">
             <h2><Link href="#">About Us</Link></h2>
             </div>
             <div className="cursor:pointer">
             <Link href="">
             <svg className="w-8 h-8 text-blue-1000" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </Link>
-            </div>
-        </div>
-        </div>
-        </>
-    )
-  }
-  
-  export default Thinking
+          </div>
+      </div>
+      </div>
+    </>
+  );
+};
+
+export default Thinking;
