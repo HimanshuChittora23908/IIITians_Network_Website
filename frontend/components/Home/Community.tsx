@@ -1,19 +1,19 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import performance from "../../images/performance.svg";
+import community from "../../images/community.svg";
 
-const Performance: NextPage = () => {
+const Community: NextPage = () => {
   return (
     <>
       <div className="my-24">
         <div className="w-12 ml-32">
-          <Image src={performance} alt="performance" />
+          <Image src={community} alt="community" />
         </div>
 
-        <div className="ml-32 text-red text-2xl font-bold text-red-1000">Performance</div>
+        <div className="ml-32 text-2xl font-bold text-orange-1000">Community</div>
         <div className="ml-32 mt-4 text-5xl md:text-6xl font-semibold pr-40">
-          <h1>Helping students to increase productivity.</h1>
+          <h1>Lorem Ipsum ...</h1>
         </div>
         <div className="ml-32 mt-4 text-base md:text-xl xl:text-2xl pr-40 xl:pr-96">
           <p className="text-gray-500">
@@ -31,26 +31,15 @@ const Performance: NextPage = () => {
           </p>
         </div>
         <div className="flex ml-32 mt-4 mb-24 text-xl gap-4 justify-left">
-          <div className="text-red-1000">
+          <div className="text-orange-1000">
             <h2 className="font-medium text-3xl">
-              <Link href="#">Our Team</Link>
+              <Link href="#">Know about IIIT’s</Link>
             </h2>
           </div>
           <div className="cursor:pointer">
             <Link href="#">
-              <svg
-                className="w-8 h-8 text-red-1000"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                ></path>
+              <svg className="w-8 h-8 text-orange-1000" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
               </svg>
             </Link>
           </div>
@@ -60,4 +49,4 @@ const Performance: NextPage = () => {
   );
 };
 
-export default Performance;
+export default Community;

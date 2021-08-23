@@ -10,8 +10,17 @@ module.exports = {
           1200: "#121212",
         },
         lime: {
-          1000: "#00FF00"
+          1000: "#00FF00",
         },
+        red:{
+          1000: "#FF0000",
+        },
+        blue: {
+          1000: "#0000FF",
+        },
+        orange: {
+          1000: "#FFA500",
+        }
       },
       fontFamily: {
         'righteous': ['Righteous', 'cursive'],
@@ -20,9 +29,9 @@ module.exports = {
       },
       boxShadow: {
         'button_custom': '4px 4px 8px rgba(255, 255, 255, 0.25)'
-      }
-    },
+      },
   },
+},
   variants: {
     extend: {},
   },
