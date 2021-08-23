@@ -39,7 +39,7 @@ const Performance = () => {
           <div className="cursor:pointer">
             <Link href="#">
               <svg
-                className="w-8 h-8 text-red-1000"
+                className="w-10 h-10 text-red-1000"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
