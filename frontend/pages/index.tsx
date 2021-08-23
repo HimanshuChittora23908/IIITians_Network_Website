@@ -4,6 +4,7 @@ import {
   WorkingFields,
   Thinking,
   StartPage,
+  Statistics,
 } from "../components/Home";
 
 const Home: NextPage = () => {
@@ -13,6 +14,7 @@ const Home: NextPage = () => {
       <Performance />
       <WorkingFields />
       <Thinking />
+      <Statistics />
     </>
   );
 };
