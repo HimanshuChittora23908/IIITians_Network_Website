@@ -1,3 +1,4 @@
+import { RegisterResolver } from './resolvers/register/RegisterResolver';
 import 'reflect-metadata';
 import 'dotenv/config'
 import express from 'express';
@@ -12,6 +13,11 @@ import passportGithubConfig from './config/OAuthProvider/github';
 import googlePassportConfig from './config/OAuthProvider/google';
 import passportLinkedinConfig from './config/OAuthProvider/linkedin';
 import passportDiscordConfig from './config/OAuthProvider/discord';
+import connectRedis from 'connect-redis';
+import session from "express-session";
+import { redis } from './config/redis';
+import { ConfirmUserResolver } from './utils/confirmUser';
+
 // import passportFacebookConfig from './config/OAuthProvider/facebook';
 // import fs from 'fs';
 // import https from 'https';
@@ -22,6 +28,27 @@ import passportDiscordConfig from './config/OAuthProvider/discord';
   // const key = fs.readFileSync('/home/raghhav/selfsigned.key')
 
   const app = express();
+
+  // Express Session MiddleWare
+  const RedisStore = connectRedis(session)
+
+  const sessionOption: session.SessionOptions = {
+    store: new RedisStore({
+      client: redis ,
+    }),
+    name: "qid",
+    secret: "jas5s56su",
+    resave: false,
+    saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 1000 * 60 * 60 * 24 * 7 * 365, // 7 years
+    },
+  };
+
+  app.use(session(sessionOption));
+
 
   // Passport Middleware
   app.use(passport.initialize())
@@ -38,7 +65,7 @@ import passportDiscordConfig from './config/OAuthProvider/discord';
 
   const apolloServer = new ApolloServer({
     schema: await buildSchema({
-      resolvers: [HelloWorldResolver],
+      resolvers: [HelloWorldResolver, RegisterResolver, ConfirmUserResolver],
       validate: true,
     }),
     context: ({ req, res }) => ({ req, res }),
