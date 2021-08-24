@@ -3,6 +3,16 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      animation: {
+        marquee: 'marquee 60s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '50%': { transform: 'translateX(-380%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+      },
       colors: {
         gray: {
           1000: "#0B0B0B",
