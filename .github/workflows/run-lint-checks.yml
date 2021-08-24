@@ -9,6 +9,10 @@ on:
       - main
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: server
+
 env:
   NODE_VERSION: 16.x
 
