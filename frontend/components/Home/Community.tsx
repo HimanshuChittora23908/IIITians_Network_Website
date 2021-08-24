@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import Marquee from "react-fast-Marquee";
+import Marquee from "react-fast-marquee";
 import community from "../../images/community.svg";
 import Agartala from "../../images/Agartala.png";
 import Allahabad from "../../images/Allahabad.png";
@@ -59,10 +59,10 @@ const Community = () => {
             sapiente pariatur.
           </p>
         </div>
-        <div className="px-32 relative flex overflow-x-hidden py-16">
-        <div className="animate-marquee whitespace-nowrap">
-          {data2.map((item) => (<div className="inline-flex mx-5"><Image height="200vw" width="200vw" quality="100" src={item} alt="community"/></div>))}
-        </div>
+        <div className="py-16">
+        <Marquee>
+        {data2.map((item,id) => (<div key={id} className="inline-flex mx-5"><Image height="200vw" width="200vw" quality="100" src={item} alt="community"/></div>))}
+        </Marquee>
         </div>
         <div className="flex ml-32 mt-4 mb-24 text-xl gap-4 justify-left">
           <div className="text-orange-1000">
