@@ -1,9 +1,38 @@
 import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import React from "react";
+import Marquee from "react-fast-Marquee";
 import community from "../../images/community.svg";
+import Agartala from "../../images/Agartala.png";
+import Allahabad from "../../images/Allahabad.png";
+import Bhagalpur from "../../images/Bhagalpur.png";
+import Bhopal from "../../images/Bhopal.png";
+import Dharwad from "../../images/Dharwad.png";
+import Guwahati from "../../images/Guwahati.png";
+import Gwalior from "../../images/Gwalior.jpg";
+import Jabalpur from "../../images/Jabalpur.jpg";
+import Kalyani from "../../images/Kalyani.png";
+import Kancheepuram from "../../images/Kancheepuram.png";
+import Kota from "../../images/Kota.png";
+import Kottayam from "../../images/Kottayam.png";
+import Kurnool from "../../images/Kurnool.png";
+import Lucknow from "../../images/Lucknow.png";
+import Manipur from "../../images/Manipur.png";
+import Nagpur from "../../images/Nagpur.png";
+import Pune from "../../images/Pune.jpg";
+import Raichur from "../../images/Raichur.png";
+import Ranchi from "../../images/Ranchi.png";
+import Sonepat from "../../images/Sonepat.png";
+import Sri_City from "../../images/Sri_City.png";
+import Surat from "../../images/Surat.jpg";
+import Tiruchirappalli from "../../images/Tiruchirappalli.png";
+import Una from "../../images/Una.png";
+import Vadodara from "../../images/Vadodara.jpg";
 
-const Community: NextPage = () => {
+const data2:StaticImageData[] = [Agartala, Allahabad, Bhagalpur, Bhopal, Dharwad, Guwahati, Gwalior, Jabalpur, Kalyani, Kancheepuram, Kota, Kottayam, Kurnool, Lucknow, Manipur, Nagpur, Pune, Raichur, Ranchi, Sonepat, Sri_City, Surat, Tiruchirappalli, Una, Vadodara];
+
+const Community = () => {
   return (
     <>
       <div className="my-24">
@@ -29,6 +58,11 @@ const Community: NextPage = () => {
             aspernatur exercitationem ex illum quia consequatur nesciunt modi
             sapiente pariatur.
           </p>
+        </div>
+        <div className="px-32 relative flex overflow-x-hidden py-16">
+        <div className="animate-marquee whitespace-nowrap">
+          {data2.map((item) => (<div className="inline-flex mx-5"><Image height="200vw" width="200vw" quality="100" src={item} alt="community"/></div>))}
+        </div>
         </div>
         <div className="flex ml-32 mt-4 mb-24 text-xl gap-4 justify-left">
           <div className="text-orange-1000">
