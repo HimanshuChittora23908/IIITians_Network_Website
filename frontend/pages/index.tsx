@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { Performance, WorkingFields, Thinking, Community, StartPage, Statistics } from "../components/Home";
+import { Performance, WorkingFields, Thinking, Community, StartPage, Statistics, Work } from "../components/Home";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       <Thinking />
       <Community />
       <Statistics />
+      <Work />
     </>
   );
 };
