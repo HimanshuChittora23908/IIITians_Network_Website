@@ -4,12 +4,11 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        marquee: 'marquee 60s linear infinite',
+        navbar: 'navbar 0.5s ease-out',
       },
       keyframes: {
-        marquee: {
-          '0%': { transform: 'translateX(0%)' },
-          '50%': { transform: 'translateX(-380%)' },
+        navbar: {
+          '0%': { transform: 'translateX(10%)' },
           '100%': { transform: 'translateX(0%)' },
         },
       },
@@ -40,9 +39,11 @@ module.exports = {
         'righteous': ['Righteous', 'cursive'],
         'rajdhani': ['Rajdhani', 'sans-serif'],
         'nunito': ['Nunito', 'sans-serif'],
+        'roboto': ['Roboto', 'monospace'],
       },
       boxShadow: {
-        'button_custom': '4px 4px 8px rgba(255, 255, 255, 0.25)'
+        'button_custom': '4px 4px 8px rgba(255, 255, 255, 0.25)',
+        'nav_custom': '30px 0px 30px 30px rgba(255, 255, 255, 0.25)',
       },
   },
 },

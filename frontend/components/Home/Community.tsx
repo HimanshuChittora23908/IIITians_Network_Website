@@ -60,7 +60,7 @@ const Community = () => {
           </p>
         </div>
         <div className="py-16">
-        <Marquee>
+        <Marquee speed={100}>
         {data2.map((item,id) => (<div key={id} className="inline-flex mx-5"><Image height="200vw" width="200vw" quality="100" src={item} alt="community"/></div>))}
         </Marquee>
         </div>

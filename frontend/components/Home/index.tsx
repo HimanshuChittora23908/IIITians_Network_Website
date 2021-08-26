@@ -6,4 +6,5 @@ import Community from "./Community";
 import Statistics from "./Statistics";
 import Footer from "./Footer"
 import Work from "./Work"
-export { Performance, Statistics, WorkingFields, Community, Thinking, StartPage, Footer, Work};
+import Navbar from "../Navbar/Navbar";
+export { Performance, Statistics, WorkingFields, Community, Thinking, StartPage, Footer, Work, Navbar };
