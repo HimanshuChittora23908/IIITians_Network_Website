@@ -7,7 +7,7 @@ import triangle_right from "../../images/triangle_right.png";
 const StartPage = () => {
   return (
     <div className="bg-gray-1000 bg-contain flex justify-between">
-      <div className="mx-32 mt-8 mb-12">
+      <div className="mx-32 mt-12 mb-16">
         <h1 className="text-white font-rajdhani text-lg">Creating better and highly skilled engineers !!!</h1>
         <h1 className="text-9xl font-righteous text-white">IIITians Network</h1>
         <p className="text-white font-rajdhani text-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci vitae rutrum vulputate sit bibendum ac platea in.</p>

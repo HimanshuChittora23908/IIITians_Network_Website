@@ -12,7 +12,7 @@ const Navbar = () => {
     function Nav_Out () {
       return (
           <div className="z-30 top-0 flex fixed w-full h-full animate-navbar">
-            <div className="z-10 bg-cover bg-black opacity-50 w-full h-full transparent" onClick={() => {setHide(false)}}></div>
+            <div className="z-20 bg-cover bg-black opacity-50 w-full h-full transparent" onClick={() => {setHide(false)}}></div>
             <div className="top-0 right-0 w-auto bg-black fixed h-full overflow-auto z-30 shadow-nav_custom">
               <div className="py-6 px-20">
                 <button className = "bg-gray-200 hover:bg-gray-100 rounded py-2 px-6 font-roboto text-xl font-bold"><h1>Login</h1></button>
@@ -44,12 +44,12 @@ const Navbar = () => {
 
   return (
       <>
-      <div className="bg-gray-1000 pt-4">
+      <div className="sticky top-0 bg-gray-1000 pt-4 h-20 z-10 overflow-hidden">
           <div className="mx-32 flex justify-between">
-          <div className="w-24 h-24">
+          <div className="w-20 h-20">
             <Image src={logo} />
           </div>
-          <div className="w-16 h-16">
+          <div className="w-12 h-12">
             <Image src={hamburger} onClick = {() => {setHide(true)}}/>
           </div>
           </div>
