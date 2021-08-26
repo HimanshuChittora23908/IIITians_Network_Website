@@ -6,7 +6,7 @@ const WorkingFields = () => {
   const [count, setcount] = useState(1);
 
   return (
-    <div className="px-32 py-20 bg-black">
+    <div className="px-32 py-20 bg-gray-1000">
       <svg
         className="w-14 h-14"
         enableBackground="new 0 0 64 64"
