@@ -6,12 +6,12 @@ const Home: NextPage = () => {
     <>
       <Navbar />
       <StartPage />
-      <Performance />
-      <WorkingFields />
-      <Thinking />
-      <Community />
-      <Statistics />
-      <Work />
+      {/* <Performance /> */}
+      {/* <WorkingFields /> */}
+      {/* <Thinking /> */}
+      {/* <Community /> */}
+      {/* <Statistics /> */}
+      {/* <Work /> */}
     </>
   );
 };
