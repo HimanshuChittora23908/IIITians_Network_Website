@@ -1,5 +1,16 @@
 import type { NextPage } from "next";
-import { Performance, WorkingFields, Thinking, Community, StartPage, Statistics, Work, Navbar, ProjectsEvents, Overpass } from "../components/Home";
+import {
+  Performance,
+  WorkingFields,
+  Thinking,
+  Community,
+  StartPage,
+  Statistics,
+  Work,
+  Navbar,
+  ProjectsEvents,
+  Overpass,
+} from "../components/Home";
 
 const Home: NextPage = () => {
   return (
@@ -7,13 +18,13 @@ const Home: NextPage = () => {
       <Navbar />
       <StartPage />
       <Performance />
-      <WorkingFields />
+      {/* <WorkingFields /> */}
       <Thinking />
       <Community />
-      <Statistics />
-      <Work />
-      <ProjectsEvents />
-      <Overpass />
+      {/* <Statistics /> */}
+      {/* <Work /> */}
+      {/* <ProjectsEvents /> */}
+      {/* <Overpass />  */}
     </>
   );
 };

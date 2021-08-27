@@ -6,17 +6,21 @@ import performance from "../../images/performance.svg";
 const Performance = () => {
   return (
     <>
-      <div className="my-24">
-        <div className="w-12 ml-32">
-          <Image src={performance} alt="performance" />
+      <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24">
+        <div className="flex justify-center items-start flex-col">
+          <div className="ml-1 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
+            <Image src={performance} alt="performance" />
+          </div>
+          <div className="text-red text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-red-1000 lg:font-bold">
+            Performance
+          </div>
         </div>
 
-        <div className="ml-32 text-red text-2xl font-bold text-red-1000">Performance</div>
-        <div className="ml-32 mt-4 text-5xl md:text-6xl font-semibold pr-40">
+        <div className="mt-2 text-2xl font-medium md:text-4xl lg:text-5xl lg:font-semibold lg:mt-4">
           <h1>Helping students to increase productivity.</h1>
         </div>
-        <div className="ml-32 mt-4 text-base md:text-xl xl:text-2xl pr-40 xl:pr-96">
-          <p className="text-gray-500">
+        <div className="mt-2">
+          <p className="text-gray-500 text-sm lg:text-2xl lg:mt-4 font-medium md:text-base md:font-semibold">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
             temporibus sint consequatur deleniti provident, necessitatibus
             voluptas expedita eos eaque officiis fugit at consequuntur
@@ -30,16 +34,16 @@ const Performance = () => {
             sapiente pariatur.
           </p>
         </div>
-        <div className="flex ml-32 mt-4 mb-24 text-xl gap-4 justify-left">
-          <div className="text-red-1000">
-            <h2 className="font-medium text-3xl">
+        <div className="flex mt-2 items-center lg:mt-4">
+          <div className="text-red-1000 lg:mr-2 xl:mr-4">
+            <h2 className="font-medium text-m md:text-lg lg:text-2xl lg:font-bold xl:text-3xl xl:font-semibold">
               <Link href="#">Our Team</Link>
             </h2>
           </div>
           <div className="cursor:pointer">
             <Link href="#">
               <svg
-                className="w-10 h-10 text-red-1000"
+                className="w-8 h-4 text-red-1000 md:w-10 md:h-5 lg:h-8 xl:h-9 xl:w-10"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

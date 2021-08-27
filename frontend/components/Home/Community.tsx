@@ -30,22 +30,52 @@ import Tiruchirappalli from "../../images/Tiruchirappalli.png";
 import Una from "../../images/Una.png";
 import Vadodara from "../../images/Vadodara.jpg";
 
-const data2:StaticImageData[] = [Agartala, Allahabad, Bhagalpur, Bhopal, Dharwad, Guwahati, Gwalior, Jabalpur, Kalyani, Kancheepuram, Kota, Kottayam, Kurnool, Lucknow, Manipur, Nagpur, Pune, Raichur, Ranchi, Sonepat, Sri_City, Surat, Tiruchirappalli, Una, Vadodara];
+const data2: StaticImageData[] = [
+  Agartala,
+  Allahabad,
+  Bhagalpur,
+  Bhopal,
+  Dharwad,
+  Guwahati,
+  Gwalior,
+  Jabalpur,
+  Kalyani,
+  Kancheepuram,
+  Kota,
+  Kottayam,
+  Kurnool,
+  Lucknow,
+  Manipur,
+  Nagpur,
+  Pune,
+  Raichur,
+  Ranchi,
+  Sonepat,
+  Sri_City,
+  Surat,
+  Tiruchirappalli,
+  Una,
+  Vadodara,
+];
 
 const Community = () => {
   return (
     <>
-      <div className="my-24">
-        <div className="w-12 ml-32">
-          <Image src={community} alt="community" />
+      <div className="mx-4 mt-8 md:mt-8 md:mx-6 lg:mx-12 lg:mt-10 xl:mx-24 xl:mt-12">
+        <div className="flex justify-center items-start flex-col">
+          <div className="ml-1 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
+            <Image src={community} alt="community" />
+          </div>
+          <div className="text-red text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-orange-1000 lg:font-bold">
+            Community
+          </div>
         </div>
 
-        <div className="ml-32 text-2xl font-bold text-orange-1000">Community</div>
-        <div className="ml-32 mt-4 text-5xl md:text-6xl font-semibold pr-40">
+        <div className="mt-0 text-2xl font-medium md:mt-2 md:text-4xl lg:text-5xl lg:font-semibold lg:mt-4">
           <h1>Lorem Ipsum ...</h1>
         </div>
-        <div className="ml-32 mt-4 text-base md:text-xl xl:text-2xl pr-40 xl:pr-96">
-          <p className="text-gray-500">
+        <div className="mt-2">
+          <p className="text-gray-500 text-sm lg:text-2xl lg:mt-4 font-medium md:text-base md:font-semibold">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
             temporibus sint consequatur deleniti provident, necessitatibus
             voluptas expedita eos eaque officiis fugit at consequuntur
@@ -59,21 +89,40 @@ const Community = () => {
             sapiente pariatur.
           </p>
         </div>
-        <div className="py-16">
-        <Marquee speed={100}>
-        {data2.map((item,id) => (<div key={id} className="inline-flex mx-5"><Image height="200vw" width="200vw" quality="100" src={item} alt="community"/></div>))}
-        </Marquee>
+      </div>
+      <div className="px-4">
+        <div className="flex py-6 items-center justify-center">
+          <Marquee gradient={false} speed={100} className="flex items-center justify-center h-auto">
+            {data2.map((item, id) => (
+              <div key={id} className="w-24 h-24 p-5 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-52 xl:h-52">
+                <Image src={item} alt="community" />
+              </div>
+            ))}
+          </Marquee>
         </div>
-        <div className="flex ml-32 mt-4 mb-24 text-xl gap-4 justify-left">
-          <div className="text-orange-1000">
-            <h2 className="font-medium text-3xl">
+      </div>
+      <div className="mx-4 mb-8 md:mb-8 md:mx-6 lg:mx-12 lg:mb-10 xl:mx-24 xl:mb-12">
+        <div className="flex mt-2 items-center lg:mt-4">
+          <div className="text-orange-1000 lg:mr-2 xl:mr-4">
+            <h2 className="font-medium text-m md:text-lg lg:text-2xl lg:font-bold xl:text-3xl xl:font-semibold">
               <Link href="#">Know about IIIT’s</Link>
             </h2>
           </div>
           <div className="cursor:pointer">
             <Link href="#">
-              <svg className="w-10 h-10 text-orange-1000" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              <svg
+                className="w-8 h-4 text-orange-1000 md:w-10 md:h-5 lg:h-8 xl:h-9 xl:w-10"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
               </svg>
             </Link>
           </div>
