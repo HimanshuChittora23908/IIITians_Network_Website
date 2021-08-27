@@ -19,12 +19,12 @@ const Home: NextPage = () => {
       <StartPage />
       <Performance />
       {/* <WorkingFields /> */}
-      <Thinking />
+      {/* <Thinking /> */}
       <Community />
-      {/* <Statistics /> */}
-      {/* <Work /> */}
-      {/* <ProjectsEvents /> */}
-      {/* <Overpass />  */}
+      {/* <Statistics />  */}
+      {/* <Work />  */}
+      <ProjectsEvents /> 
+      <Overpass />  
     </>
   );
 };
