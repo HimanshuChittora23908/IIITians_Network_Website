@@ -7,4 +7,6 @@ import Statistics from "./Statistics";
 import Footer from "./Footer"
 import Work from "./Work"
 import Navbar from "../Navbar/Navbar";
-export { Performance, Statistics, WorkingFields, Community, Thinking, StartPage, Footer, Work, Navbar };
+import ProjectsEvents from "./ProjectsAndEvents";
+import Overpass from "./Overpass";
+export { Performance, Statistics, WorkingFields, Community, Thinking, StartPage, Footer, Work, Navbar, ProjectsEvents, Overpass};
