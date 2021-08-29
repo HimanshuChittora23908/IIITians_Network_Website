@@ -22,9 +22,9 @@ const Home: NextPage = () => {
       {/* <Thinking /> */}
       <Community />
       {/* <Statistics />  */}
-      {/* <Work />  */}
-      <ProjectsEvents /> 
-      <Overpass />  
+      <Work /> 
+      {/* <ProjectsEvents /> 
+      <Overpass /> */}
     </>
   );
 };

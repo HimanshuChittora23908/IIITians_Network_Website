@@ -7,8 +7,8 @@ import graduationcap from "../../images/graduationcap.svg";
 const Work = () => {
   return (
     <>
-      <div className="my-24">
-        <div className="w-12 ml-32">
+      <div className="">
+        <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24">
           <svg
             width="60"
             height="60"
@@ -27,14 +27,14 @@ const Work = () => {
           </svg>
         </div>
 
-        <div className="ml-32 text-red text-2xl font-bold text-purple-1000">
+        <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24 text-red text-2xl font-bold text-purple-1000">
           Work
         </div>
-        <div className="ml-32 mt-4 text-5xl md:text-6xl font-semibold pr-40 text-black">
+        <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24 mt-4 text-5xl md:text-6xl font-semibold text-black">
           <h1>Things we do here...</h1>
         </div>
-        <div className="ml-32 mt-4 text-base md:text-xl xl:text-2xl pr-40 xl:pr-96">
-          <div className="flex w-full flex-row justify-right justify-between gap-8">
+        <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24 mt-4 text-base md:text-xl xl:text-2xl">
+          <div className="flex flex-col md:flex-row justify-between gap-8">
             <div className="bg-gray-200 rounded p-5 flex-1">
               <div className="flex gap-8">
                 <div>

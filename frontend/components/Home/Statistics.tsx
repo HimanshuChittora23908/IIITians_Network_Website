@@ -52,7 +52,7 @@ const Triangle: React.FC<Stats> = ({ text, score }) => {
 
 const Statistics = () => {
   return (
-    <div className="m-32">
+    <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24">
       <div className="text-blue-800">
         <svg
           width="50"
