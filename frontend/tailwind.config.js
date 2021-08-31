@@ -6,6 +6,12 @@ module.exports = {
       animation: {
         navbar: 'navbar 0.5s ease-out',
       },
+      spacing: {
+        '18': "4.4rem",
+        '22': "5.8rem",
+        '26': "6.6rem",
+        '38': "9.8rem",
+      },
       keyframes: {
         navbar: {
           '0%': { transform: 'translateX(10%)' },
@@ -22,7 +28,7 @@ module.exports = {
         lime: {
           1000: "#00FF00",
         },
-        red:{
+        red: {
           1000: "#FF0000",
         },
         blue: {
@@ -45,8 +51,8 @@ module.exports = {
         'button_custom': '4px 4px 8px rgba(255, 255, 255, 0.25)',
         'nav_custom': '30px 0px 30px 30px rgba(255, 255, 255, 0.25)',
       },
+    },
   },
-},
   variants: {
     extend: {},
   },

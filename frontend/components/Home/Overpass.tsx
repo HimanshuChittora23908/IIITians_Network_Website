@@ -48,7 +48,7 @@ const Overpass = () => {
           </div>
           <div className="col-span-1mx-4 md:mx-6 lg:mx-12 xl:mx-24">
             <h2 className="text-lg md:text-2xl xl:text-4xl  font-bold">Support</h2>
-            <h4 className="text-sm md:text-xl xl:text-2xl font-light pt-4">Check out our</h4>
+            <h4 className="text-sm md:text-xl xl:text-2xl pt-4">Check out our</h4>
             <h4 className="text-sm md:text-xl xl:text-2xl">Help Center</h4>
           </div>
       </div>
