@@ -19,9 +19,9 @@ const Home: NextPage = () => {
       <StartPage />
       <Performance />
       {/* <WorkingFields /> */}
-      {/* <Thinking /> */}
+      <Thinking />
       <Community />
-      {/* <Statistics />  */}
+      <Statistics /> 
       <Work /> 
       {/* <ProjectsEvents /> 
       <Overpass /> */}
