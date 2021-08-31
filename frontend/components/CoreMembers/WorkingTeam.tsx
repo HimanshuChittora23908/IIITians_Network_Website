@@ -9,11 +9,11 @@ const WorkingTeam = () => {
   return (
     <>
         <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24">
-            <div className="mt-2 text-2xl font-medium md:text-4xl lg:text-5xl lg:font-semibold lg:mt-4">
+            <div className="mt-2 lg:mt-4 justify-items-center">
             <Image src={photo1} alt="smart working team" />
             </div>
         </div>
-        <div className="flex flex-row">
+        <div className="flex flex-row justify-center">
             <Image className="" src={coffee} alt="coffee" />
             <Image className="" src={laptops} alt="laptops" />
             <Image className="" src={laptop} alt="laptop" />
