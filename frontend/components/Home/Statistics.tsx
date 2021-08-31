@@ -28,35 +28,29 @@ const data: Stats[] = [
   },
 ];
 
-const mystyle = {
-  width: 0,
-  height: 0,
-  borderStyle: "solid",
-  borderWidth: "6rem 5rem 0 5rem",
-  borderColor: "black transparent transparent transparent",
-};
-
 const Triangle: React.FC<Stats> = ({ text, score }) => {
   return (
-    <div className="flex flex-col relative">
-      <div className="w-40 h-40 bg-black flex flex-col items-center">
-        <div className="text-white flex justify-center items-center text-2xl text-center w-40 h-20 p-4">{text}</div>
-        <div className="w-28 text-2xl h-28 flex justify-center items-center text-white rounded-full border-4 absolute bottom-16">
-          {score}
+    <div className="flex flex-col relative mt-2 md:mt-4 lg:mt-8 xl:mt-2 mr-3 lg:mr-0 items-center justify-center">
+      <div className="w-24 h-24 sm:w-32 sm:h-32 lg:w-36 lg:h-36 xl:w-56 xl:h-56 bg-black flex flex-col items-center">
+        <div className="text-white flex justify-center items-center text-m sm:text-lg lg:text-xl xl:text-3xl text-center w-24 h-18 sm:w-32 sm:h-20 lg:w-36 lg:h-24 xl:w-56 xl:h-32 p-4">
+          {text}
         </div>
       </div>
-      <div style={mystyle} />
+      <div className="w-24 sm:w-32 lg:w-36 xl:w-56 overflow-hidden inline-block">
+        <div className="h-18 w-18 sm:h-22 sm:w-22 lg:w-26 lg:h-26 xl:w-38 xl:h-38 bg-black -rotate-45 transform origin-top-left"></div>
+      </div>
+      <div className="w-14 h-14 sm:w-20 sm:h-20 lg:w-24 lg:h-24 xl:w-38 xl:h-38 text-sm sm:text-lg xl:text-3xl flex justify-center items-center text-white rounded-full border-4 xl:border-6 absolute top-16 left-5 sm:top-20 sm:left-7 lg:left-6 xl:left-8 xl:top-28">
+        {score}
+      </div>
     </div>
   );
 };
 
 const Statistics = () => {
   return (
-    <div className="mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24">
-      <div className="text-blue-800">
+    <div className="mx-4 mt-8 md:mt-8 md:mx-6 lg:mx-12 lg:mt-10 xl:mx-24 xl:mt-12">
+      <div className="text-blue-800 ml-1 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
         <svg
-          width="50"
-          height="50"
           viewBox="0 0 50 50"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -74,11 +68,11 @@ const Statistics = () => {
           </defs>
         </svg>
       </div>
-      <div className="text-2xl font-bold text-gray-1300 mt-1">Statistics</div>
-      <div className="mt-4 text-5xl md:text-6xl font-bold pr-40">
+      <div className="text-red text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-1300 lg:font-bold">Statistics</div>
+      <div className="mt-0 text-2xl font-medium md:mt-2 md:text-4xl lg:text-5xl lg:font-semibold lg:mt-4">
         <h1>People with us...</h1>
       </div>
-      <div className="flex-row flex justify-between mt-12">
+      <div className="flex-row flex justify-center lg:justify-between xl:justify-evenly flex-wrap mt-4 lg:mt-6 xl:mt-8">
         {data.map((item, index) => {
           return <Triangle key={index} text={item.text} score={item.score} />;
         })}
