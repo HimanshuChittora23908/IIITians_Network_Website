@@ -23,7 +23,7 @@ const OurApproach = () => {
             <div className="col-span-2">
 
                 <h2 className="text-4xl">Adaptable</h2>
-                <p className="xl:text-xl">
+                <p className="lg:text-xl xl:text-2xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
                 temporibus sint consequatur deleniti provident, necessitatibus
                 voluptas expedita eos eaque officiis fugit at consequuntur
