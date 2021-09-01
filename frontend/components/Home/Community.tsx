@@ -92,13 +92,9 @@ const Community = () => {
       </div>
       <div className="px-4">
         <div className="flex py-6 items-center justify-center">
-          <Marquee gradient={false} speed={100} className="flex items-center justify-center h-auto">
-            {data2.map((item, id) => (
-              <div key={id} className="w-24 h-24 p-5 md:w-32 md:h-32 lg:w-40 lg:h-40 xl:w-52 xl:h-52">
-                <Image src={item} alt="community" />
-              </div>
-            ))}
-          </Marquee>
+        <Marquee speed={100}>
+        {data2.map((item,id) => (<div key={id} className="inline-flex mx-5"><Image height="200vw" width="200vw" quality="100" src={item} alt="community"/></div>))}
+        </Marquee>
         </div>
       </div>
       <div className="mx-4 mb-8 md:mb-8 md:mx-6 lg:mx-12 lg:mb-10 xl:mx-24 xl:mb-12">
