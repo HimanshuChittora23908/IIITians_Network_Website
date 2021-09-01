@@ -71,7 +71,7 @@ const Navbar = () => {
                 </div>
                 <hr className="mb-6" />
                 <div>
-                {data3.map((item, index) => (<div><h1 className="text-white text-xl px-20 py-2 font-roboto"><Image src={item.image} width="16" height="16"></Image><a href="#"> {item.text}</a></h1></div>))}
+                {data3.map((item, index) => (<div key={index}><h1 className="text-white text-xl px-20 py-2 font-roboto"><Image src={item.image} width="16" height="16"></Image><a href="#"> {item.text}</a></h1></div>))}
                 </div>
                 <hr className="mt-6" />
                 <div className="px-12 py-2 flex items-center">

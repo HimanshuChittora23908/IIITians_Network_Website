@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { WorkingTeam, WhatWeDo, OurApproach, OurRoles } from "../components/CoreMembers";
+import { WorkingTeam, WhatWeDo, OurApproach, OurRoles, Leadership } from "../components/CoreMembers";
 import { Navbar } from "../components/Home";
 
 const CoreMembers: NextPage = () => {
@@ -7,9 +7,10 @@ const CoreMembers: NextPage = () => {
     <>
       <Navbar />
       <WorkingTeam />
-      {/* <WhatWeDo /> */}
-      {/* <OurApproach /> */}
+      <WhatWeDo />
+      <OurApproach />
       <OurRoles />
+      <Leadership />
     </>
   );
 };
