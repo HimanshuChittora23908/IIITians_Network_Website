@@ -30,33 +30,7 @@ import Tiruchirappalli from "../../images/Tiruchirappalli.png";
 import Una from "../../images/Una.png";
 import Vadodara from "../../images/Vadodara.jpg";
 
-const data2: StaticImageData[] = [
-  Agartala,
-  Allahabad,
-  Bhagalpur,
-  Bhopal,
-  Dharwad,
-  Guwahati,
-  Gwalior,
-  Jabalpur,
-  Kalyani,
-  Kancheepuram,
-  Kota,
-  Kottayam,
-  Kurnool,
-  Lucknow,
-  Manipur,
-  Nagpur,
-  Pune,
-  Raichur,
-  Ranchi,
-  Sonepat,
-  Sri_City,
-  Surat,
-  Tiruchirappalli,
-  Una,
-  Vadodara,
-];
+const data2: StaticImageData[] = [Agartala, Allahabad, Bhagalpur, Bhopal, Dharwad, Guwahati, Gwalior, Jabalpur, Kalyani, Kancheepuram, Kota, Kottayam, Kurnool, Lucknow, Manipur, Nagpur, Pune, Raichur, Ranchi, Sonepat, Sri_City, Surat, Tiruchirappalli, Una, Vadodara];
 
 const Community = () => {
   return (
