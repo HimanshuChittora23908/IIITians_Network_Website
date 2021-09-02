@@ -13,7 +13,7 @@ const WorkingTeam = () => {
             <h1 className="text-7xl text-red-1000 flex justify-end font-semibold italic">Meet our Smart Working team</h1>
             </div>
         </div>
-        <div className="flex overflow-x-auto overflow-x-auto">
+        <div className="flex overflow-x-auto">
             <Image className="" src={coffee} alt="coffee" />
             <Image className="" src={laptops} alt="laptops" />
             <Image className="" src={laptop} alt="laptop" />
