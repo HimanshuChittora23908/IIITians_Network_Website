@@ -8,32 +8,32 @@ import globe from "../../images/globe.png";
 const WhatWeDo = () => {
   return (
     <>
-        <div className="bg-gray-700 lg:grid lg:grid-cols-2">
-            <div className="col-span-1 text-center text-white p-8 text-3xl font-bold">
-                <h1 className="text-6xl">What We Do</h1>
+        <div className="bg-gray-1000 lg:grid lg:grid-cols-2">
+            <div className="col-span-1 text-center text-white py-40 text-2xl font-semibold">
+                <h1 className="text-6xl font-bold">What We Do</h1>
                 <br />
-                <p>Expect creativity</p>
-                <p>Obsess over details</p>
-                <p>Value relationships</p>
-                <p>High-five</p>
-                <p>Make things, break things</p>
-                <p>Meme</p>
-                <p>Exceed expectations</p>
-                <p>World-class digital</p>
-                <p>Party</p>
+                <p className="pb-2">Expect creativity</p>
+                <p className="pb-2">Obsess over details</p>
+                <p className="pb-2">Value relationships</p>
+                <p className="pb-2">High-five</p>
+                <p className="pb-2">Make things, break things</p>
+                <p className="pb-2">Meme</p>
+                <p className="pb-2">Exceed expectations</p>
+                <p className="pb-2">World-class digital</p>
+                <p className="pb-2">Party</p>
             </div>
-            <div className="col-span-1 text-center text-white p-8 text-3xl font-bold">
-                <h1 className="text-6xl"><strike>What we don't do</strike></h1>
+            <div className="col-span-1 text-center text-gray-500 py-40 text-2xl font-semibold">
+                <h1 className="text-6xl font-bold line-through">What we don't do</h1>
                 <br />
-                <p>Work late / weekends</p>
-                <p>Resist cake</p>
-                <p>Sacrifice quality for profit</p>
-                <p>Overpromise</p>
-                <p>Lose at Mario Kart</p>
-                <p>Work for free</p>
-                <p>Egos</p>
-                <p>Impossible deadlines</p>
-                <p>Outsource</p>
+                <p className="pb-2">Work late / weekends</p>
+                <p className="pb-2">Resist cake</p>
+                <p className="pb-2">Sacrifice quality for profit</p>
+                <p className="pb-2">Overpromise</p>
+                <p className="pb-2">Lose at Mario Kart</p>
+                <p className="pb-2">Work for free</p>
+                <p className="pb-2">Egos</p>
+                <p className="pb-2">Impossible deadlines</p>
+                <p className="pb-2">Outsource</p>
             </div>
         </div>
     </>

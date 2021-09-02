@@ -43,7 +43,7 @@ const WorkingTeam = () => {
             </div>
             <div className="lg:col-span-2 ml-8">
                 <p className="lg:text-3xl lg:font-semibold text-gray-700 text-justify"><i>
-                We might be spread across northern, eastern, western and southern part of India, operating on these sides of the of the country, but we’re all on the same page. We’re serious about what we do, and the commitments we make to our clients. We also try to give our best in grabing as much as possible while learning and doing projects.
+                "We might be spread across northern, eastern, western and southern part of India, operating on these sides of the of the country, but we’re all on the same page. We’re serious about what we do, and the commitments we make to our clients. We also try to give our best in grabing as much as possible while learning and doing projects."
                 </i></p>
             </div>
         </div>
