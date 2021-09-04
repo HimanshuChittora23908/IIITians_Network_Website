@@ -1,10 +1,3 @@
-import Image from "next/image";
-import photo1 from "../../images/1x.png";
-import coffee from "../../images/coffee.png";
-import laptops from "../../images/laptops.png";
-import laptop from "../../images/laptop.png";
-import globe from "../../images/globe.png";
-
 const WhatWeDo = () => {
   return (
     <>
