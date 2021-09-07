@@ -1,4 +1,4 @@
-import { ConfirmUserResolver } from "../utils/confirmUser";
+import { ConfirmUserResolver } from "./confirmUser";
 import { HelloWorldResolver } from "./HelloWorldResolver";
 import { RegisterResolver } from "./register/RegisterResolver";
 
