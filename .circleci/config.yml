@@ -1,10 +1,25 @@
-version: 2.1
+# # This config is equivalent to both the '.circleci/extended/orb-free.yml' and the base '.circleci/config.yml'
+# version: 2.1
 
+# orbs:
+#   node: circleci/node@4.1
+
+# workflows:
+#   sample:
+#     jobs:
+#       - node/test:
+#           version: '15.1'
+#           app-dir: "server"
+#           # This is the node version to use for the `cimg/node` tag
+#           # Relevant tags can be found on the CircleCI Developer Hub
+#           # https://circleci.com/developer/images/image/cimg/node
+
+
+version: 2.1
 orbs:
   heroku: circleci/heroku@1.0.1
-
 workflows:
   heroku_deploy:
+    app-dir: "server"
     jobs:
-      - heroku/deploy-via-git:
-        app-dir: "server"
+      - heroku/deploy-via-git
