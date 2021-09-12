@@ -60,8 +60,5 @@
     "postinstall": "tsc",
     "dev": "ts-node-dev --respawn src/index.ts",
     "lint": "eslint . --fix --ext .ts"
-  },
-  "engines": {
-    "yarn": "YARN NO LONGER USED - use npm instead."
   }
 }
