@@ -37,5 +37,4 @@ jobs:
         shell: bash
         run: |
           npm i
-          npm eslint . --fix --ext .ts
-          find . -name '*.json' -not -path './node_modules/*' -exec npm jsonlint {} -q \;
+          npm run lint
