@@ -47,13 +47,13 @@ jobs:
       # Install the latest npm - the node Orb takes care of it
       - node/install-npm
       - node/install-packages:
-          app-dir: ~/project/server
+          app-dir: server
           cache-version: v1
           cache-path: node_modules
       - run:
-          app-dir: ~/project/server
+          app-dir: server
           cache-version: v1
-          command: npm run build
+          command: npm run postinstall
           name: Build
 
 workflows:
