@@ -47,6 +47,8 @@ import isAuth from './utils/isAuth'
       authChecker: isAuth
     }),
     context: contextFn,
+    playground: true,
+    introspection: true
   });
 
   apolloServer.applyMiddleware({ app, cors: false });
