@@ -47,11 +47,15 @@ import isAuth from './utils/isAuth'
       authChecker: isAuth
     }),
     context: contextFn,
-    playground: true,
-    introspection: true
+    introspection: true,
+    playground: {
+      settings: {
+        "request.credentials": "same-origin",
+      }
+    }
   });
 
-  apolloServer.applyMiddleware({ app, cors: true });
+  apolloServer.applyMiddleware({ app, cors: false });
   const port = process.env.PORT || 4000;
 
   // HTTPS Server for Facebook OAuth
