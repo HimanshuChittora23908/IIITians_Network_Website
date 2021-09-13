@@ -19,7 +19,7 @@ const Home: NextPage = () => {
       <Navbar />
       <StartPage />
       <Performance />
-      {/* <WorkingFields /> */}
+      <WorkingFields />
       <Thinking />
       <Community />
       <Statistics /> 
