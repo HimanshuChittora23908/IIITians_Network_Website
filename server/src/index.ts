@@ -7,12 +7,14 @@ import { connectDatabase } from './config/db';
 import { authRouter } from './routes/AuthRouter';
 import { Resolvers } from './resolvers/Resolvers';
 import { sessionOption } from './config/express-session';
+import cookieparser from 'cookie-parser';
+import cors from 'cors';
 
 import passport from 'passport';
-import './config/OAuthProvider/github';
-import './config/OAuthProvider/google';
-import './config/OAuthProvider/linkedin';
-import './config/OAuthProvider/discord';
+// import './config/OAuthProvider/github';
+// import './config/OAuthProvider/google';
+// import './config/OAuthProvider/linkedin';
+// import './config/OAuthProvider/discord';
 
 import session from "express-session";
 import contextFn from './types/Context';
@@ -27,12 +29,14 @@ import isAuth from './utils/isAuth'
   // const key = fs.readFileSync('/home/raghhav/selfsigned.key')
 
   const app = express();
-
+  app.use(cors({
+    credentials: true
+  }))
   // Passport Middleware
   app.use(passport.initialize())
   const passportSessionMiddleware = passport.session();
   // passportFacebookConfig();
-
+  app.use(cookieparser());
   app.use(session(sessionOption));
   app.use(passportSessionMiddleware);
   app.use('/', authRouter);
@@ -55,7 +59,7 @@ import isAuth from './utils/isAuth'
     }
   });
 
-  apolloServer.applyMiddleware({ app, cors: false });
+  apolloServer.applyMiddleware({ app });
   const port = process.env.PORT || 4000;
 
   // HTTPS Server for Facebook OAuth
