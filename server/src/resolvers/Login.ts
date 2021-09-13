@@ -30,6 +30,7 @@ export class LoginResolver{
         }
 
         ctx.req.session.passport = { user: user.id };
+        console.log(ctx.req.session);
         return user;
     }
 }

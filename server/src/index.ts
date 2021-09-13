@@ -50,7 +50,7 @@ import isAuth from './utils/isAuth'
     introspection: true,
     playground: {
       settings: {
-        "request.credentials": "same-origin",
+        "request.credentials": "include",
       }
     }
   });
