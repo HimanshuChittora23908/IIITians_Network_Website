@@ -1,9 +1,3 @@
-const Footer = () => {
-    return(
-        <div>
-            Hello from footer !!!
-        </div>
-    )
-}
+import Footer_Main from './Footer_Main';
 
-export default Footer;
+export {Footer_Main};
