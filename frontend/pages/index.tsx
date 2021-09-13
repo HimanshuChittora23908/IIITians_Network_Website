@@ -18,13 +18,13 @@ const Home: NextPage = () => {
       <Navbar />
       <StartPage />
       <Performance />
-      {/* <WorkingFields /> */}
+      <WorkingFields />
       <Thinking />
       <Community />
-      <Statistics /> 
-      <Work /> 
-      {/* <ProjectsEvents /> 
-      <Overpass /> */}
+      <Statistics />
+      <Work />
+      <ProjectsEvents />
+      {/* <Overpass /> */}
     </>
   );
 };
