@@ -11,6 +11,7 @@ import {
   ProjectsEvents,
   Overpass,
 } from "../components/Home";
+import { Footer_Main } from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -21,10 +22,11 @@ const Home: NextPage = () => {
       <WorkingFields />
       <Thinking />
       <Community />
-      <Statistics />
-      <Work />
-      <ProjectsEvents />
-      {/* <Overpass /> */}
+      <Statistics /> 
+      <Work /> 
+      {/* <ProjectsEvents /> 
+      <Overpass /> */}
+      <Footer_Main />
     </>
   );
 };

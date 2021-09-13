@@ -1,5 +1,6 @@
 {
-  "name": "frontend",
+  "homepage":"https://iiitians-network-website.vercel.app/",
+  "name": "IIITians_Network_Website",
   "version": "0.1.0",
   "private": true,
   "scripts": {

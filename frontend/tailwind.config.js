@@ -11,6 +11,7 @@ module.exports = {
         '22': "5.8rem",
         '26': "6.6rem",
         '38': "9.8rem",
+        '120': "30rem",
       },
       keyframes: {
         navbar: {
@@ -50,6 +51,9 @@ module.exports = {
       boxShadow: {
         'button_custom': '4px 4px 8px rgba(255, 255, 255, 0.25)',
         'nav_custom': '30px 0px 30px 30px rgba(255, 255, 255, 0.25)',
+      },
+      backgroundImage: {
+        'footer-bg': "url('../images/Footer_Image.png')",
       },
     },
   },
