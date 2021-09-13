@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import { BrandIdentity, WeAre, WhoWeAre } from "../components/WebsiteTeamMembers";
 import { Navbar } from "../components/Home";
+import { Footer_Main } from "../components/Footer";
 
 const WebsiteTeamMembers: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const WebsiteTeamMembers: NextPage = () => {
       <BrandIdentity />
       <WeAre />
       <WhoWeAre />
+      <Footer_Main />
     </>
   );
 };

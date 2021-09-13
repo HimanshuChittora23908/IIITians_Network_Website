@@ -4,7 +4,7 @@ import logo from '../../images/logo.webp';
 
 const Footer_Main = () => {
     return(
-        <div className="bg-footer-bg bg-cover bg-center flex justify-around items-start pt-16">
+        <div className="bg-footer-bg bg-cover bg-center flex justify-around items-start pt-16 mt-32">
             <div>
                 <div className="w-32 h-32">
                 <Image src={logo}></Image>

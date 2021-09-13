@@ -11,6 +11,7 @@ import {
   ProjectsEvents,
   Overpass,
 } from "../components/Home";
+import { Footer_Main } from "../components/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <Work /> 
       {/* <ProjectsEvents /> 
       <Overpass /> */}
+      <Footer_Main />
     </>
   );
 };
