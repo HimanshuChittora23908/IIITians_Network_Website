@@ -1,14 +1,20 @@
 import React from "react";
 import Image from "next/image";
 import logo from '../../images/logo.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer_Main = () => {
     return(
         <div className="bg-footer-bg bg-cover bg-center flex justify-around items-start pt-16 mt-32">
             <div>
-                <div className="w-32 h-32">
-                <Image src={logo}></Image>
-                </div>
+                <div className="w-32 h-32 mb-16"><Image src={logo}></Image></div>
+                <h1 className="text-3xl text-white font-light mb-4">Social Network</h1>
+                <FontAwesomeIcon icon={faGithub} className="text-white mr-4" size="2x" />
+                <FontAwesomeIcon icon={faLinkedin} className="text-white mr-4" size="2x" />
+                <FontAwesomeIcon icon={faTwitter} className="text-white mr-4" size="2x" />
+                <FontAwesomeIcon icon={faInstagram} className="text-white mr-4" size="2x" />
+                <FontAwesomeIcon icon={faFacebook} className="text-white mr-4" size="2x" />
             </div>
             <div>
                 <h1 className="text-3xl text-white font-light mb-6">Explore</h1>
