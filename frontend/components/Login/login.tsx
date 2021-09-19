@@ -22,7 +22,7 @@ const LoginPage = () => {
                 <br />
                 <input type="text" placeholder="Password" className="mt-1 mb-3 py-1 pl-4 w-72 rounded-md"></input>
             </div>
-            <button className="bg-gray-700 hover:bg-black text-white font-bold py-2 px-6 rounded-full mt-3 mb-2">Login</button>
+            <button className="bg-gray-800 hover:bg-black text-white font-bold py-2 px-6 rounded-full mt-3 mb-2">Login</button>
             <div className="">
                 <button className="text-gray-600 text-xs font-medium">Forgot Password</button>
             </div>
