@@ -13,12 +13,12 @@ const LoginPage = () => {
         <div className="bg-white bg-opacity-70 border-2 border-gray-400 shadow-login_custom text-center w-1/2 h-auto rounded-3xl block mx-auto">
             <h2 className="pt-12 pb-8 text-5xl font-bold">Login</h2>
             <div className="flex-center flex-col">
-                <label className="text-gray-700 font-medium font-semibold">Username</label>
+                <label className="text-gray-700 font-medium">Username</label>
                 <br />
                 <input type="text" placeholder="Username" className="mt-1 mb-3 py-1 px-4 w-72 rounded-md"></input>
             </div>
             <div className="flex-center flex-col">
-                <label className="text-gray-700 font-medium font-semibold">Password</label>
+                <label className="text-gray-700 font-medium">Password</label>
                 <br />
                 <input type="text" placeholder="Password" className="mt-1 mb-3 py-1 pl-4 w-72 rounded-md"></input>
             </div>
