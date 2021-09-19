@@ -79,13 +79,11 @@ const RegisterEmail2 = () => {
                 })}
             </div>
             
-            <button className="bg-gray-600 hover:bg-black text-white font-bold py-2 px-6 rounded-full mt-4">Upload Image</button>
-            <br />
-            <button className="bg-gray-600 hover:bg-black text-white font-bold py-2 px-6 rounded-full my-2">Submit</button>
-            <div className="">
+            <label>Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*" />
+            <input type="submit" />
                 <button className="text-black font-bold py-2 px-6 rounded-full mt-2">Skip for now</button>
             </div>
-        </div>
     </>
   );
 };
