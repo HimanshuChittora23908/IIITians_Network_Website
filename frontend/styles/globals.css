@@ -21,3 +21,6 @@
   transform: translateY(-100%);
 }
 
+.bg_login {
+  background-image: url("/images/login_bg.png");
+}

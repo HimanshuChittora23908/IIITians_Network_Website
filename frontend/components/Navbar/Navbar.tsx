@@ -8,7 +8,7 @@ import man from "../../images/man.webp";
 
 const Navbar = () => {
   const [Hide, setHide] = useState(false);
-  const [scroll, setscroll] = useState(true);
+  const [scroll, setscroll] = useState(false);
   let scrollpos = 0;
 
   useEffect(() => {

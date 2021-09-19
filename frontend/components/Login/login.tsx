@@ -1,64 +1,42 @@
 import Link from "next/link";
 import Image from "next/image";
-import LoginBg from "../../images/loginbg.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faGithub, faGoogle, faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const LoginPage = () => {
   return (
     <>
-        <div className="bg-gray-300 mx-4 my-4 md:mx-6 lg:mx-12 xl:mx-24 rounded-xl text-center">
-            <h2 className="pt-12 pb-12 text-4xl">Login</h2>
-            <div className="flex-center flex-col ">
-                <label className="pr-12 text-gray-600 font-light">Username</label>
+        <div className="bg-login-bg bg-cover pt-32 pb-52">
+        <div className="w-24 h-24 rounded-2xl bg-white opacity-70 ml-110 -mt-8 absolute shadow-login_custom"></div>
+        <div className="w-40 h-40 rounded-2xl bg-white opacity-70 ml-160 -mt-12 absolute shadow-login_custom"></div>
+        
+        <div className="bg-white bg-opacity-70 border-2 border-gray-400 shadow-login_custom text-center w-1/2 h-auto rounded-3xl block mx-auto">
+            <h2 className="pt-12 pb-8 text-5xl font-bold">Login</h2>
+            <div className="flex-center flex-col">
+                <label className="text-gray-700 font-medium font-semibold">Username</label>
                 <br />
-                <input type="text" placeholder="Username" className="my-2 pl-4 py-2 w-64 rounded-md"></input>
+                <input type="text" placeholder="Username" className="mt-1 mb-3 py-1 px-4 w-72 rounded-md"></input>
             </div>
-            <div className="flex-center flex-col ">
-                <label className="pr-12 text-gray-600 font-light">Password</label>
+            <div className="flex-center flex-col">
+                <label className="text-gray-700 font-medium font-semibold">Password</label>
                 <br />
-                <input type="text" placeholder="Password" className="my-2 py-2 pl-4 w-64 rounded-md"></input>
+                <input type="text" placeholder="Password" className="mt-1 mb-3 py-1 pl-4 w-72 rounded-md"></input>
             </div>
-            <button className="bg-gray-600 hover:bg-black text-white font-bold py-2 px-6 rounded-full my-4">Login</button>
+            <button className="bg-gray-700 hover:bg-black text-white font-bold py-2 px-6 rounded-full mt-3 mb-2">Login</button>
             <div className="">
-                <button className="text-black font-bold py-2 px-6 rounded-full mt-2">Forgot Password</button>
+                <button className="text-gray-600 text-xs font-medium">Forgot Password</button>
             </div>
-            <div>
-                <button className="text-black font-bold py-2 px-6 rounded-full">Register</button>
+            <div> 
+                <button className="text-gray-600 text-xs font-medium">Register</button>
             </div>
-
-            {/* Login options */}
-            <div className="flex gap-4 lg:gap-6 xl:gap-8 py-8 justify-center">
-                <Link href="https://www.google.com" className=" ml-1 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 content-center">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M36.3422 16.7358H34.9997V16.6667H19.9997V23.3333H29.4188C28.0447 27.2142 24.3522 30 19.9997 30C14.4772 30 9.99967 25.5225 9.99967 20C9.99967 14.4775 14.4772 10 19.9997 10C22.5488 10 24.868 10.9617 26.6338 12.5325L31.348 7.81834C28.3713 5.04418 24.3897 3.33334 19.9997 3.33334C10.7955 3.33334 3.33301 10.7958 3.33301 20C3.33301 29.2042 10.7955 36.6667 19.9997 36.6667C29.2038 36.6667 36.6663 29.2042 36.6663 20C36.6663 18.8825 36.5513 17.7917 36.3422 16.7358Z" fill="#FFC107"/>
-                        <path d="M5.25488 12.2425L10.7307 16.2583C12.2124 12.59 15.8007 10 19.9999 10C22.5491 10 24.8682 10.9617 26.6341 12.5325L31.3482 7.81834C28.3716 5.04418 24.3899 3.33334 19.9999 3.33334C13.5982 3.33334 8.04655 6.94751 5.25488 12.2425Z" fill="#FF3D00"/>
-                        <path d="M19.9996 36.6667C24.3046 36.6667 28.2163 35.0192 31.1738 32.34L26.0154 27.975C24.2859 29.2903 22.1725 30.0017 19.9996 30C15.6646 30 11.9838 27.2358 10.5971 23.3783L5.16211 27.5658C7.92044 32.9633 13.5221 36.6667 19.9996 36.6667Z" fill="#4CAF50"/>
-                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7618 25.1803 27.5778 26.7943 26.0133 27.9758L26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#1976D2"/>
-                    </svg>
-                </Link>
-                <Link href="https://www.github.com" className="ml-1 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C8.95 0 0 8.95 0 20C0 28.85 5.725 36.325 13.675 38.975C14.675 39.15 15.05 38.55 15.05 38.025C15.05 37.55 15.025 35.975 15.025 34.3C10 35.225 8.7 33.075 8.3 31.95C8.075 31.375 7.1 29.6 6.25 29.125C5.55 28.75 4.55 27.825 6.225 27.8C7.8 27.775 8.925 29.25 9.3 29.85C11.1 32.875 13.975 32.025 15.125 31.5C15.3 30.2 15.825 29.325 16.4 28.825C11.95 28.325 7.3 26.6 7.3 18.95C7.3 16.775 8.075 14.975 9.35 13.575C9.15 13.075 8.45 11.025 9.55 8.275C9.55 8.275 11.225 7.75 15.05 10.325C16.65 9.875 18.35 9.65 20.05 9.65C21.75 9.65 23.45 9.875 25.05 10.325C28.875 7.725 30.55 8.275 30.55 8.275C31.65 11.025 30.95 13.075 30.75 13.575C32.025 14.975 32.8 16.75 32.8 18.95C32.8 26.625 28.125 28.325 23.675 28.825C24.4 29.45 25.025 30.65 25.025 32.525C25.025 35.2 25 37.35 25 38.025C25 38.55 25.375 39.175 26.375 38.975C30.3453 37.6345 33.7953 35.0828 36.2394 31.6789C38.6836 28.2751 39.9988 24.1905 40 20C40 8.95 31.05 0 20 0Z" fill="black"/>
-                    </svg>
-
-                </Link>
-                <Link href="https://www.facebook.com" className="ml-1 w-8 h-8 px-4 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 20.1117C0 30.055 7.22167 38.3233 16.6667 40V25.555H11.6667V20H16.6667V15.555C16.6667 10.555 19.8883 7.77833 24.445 7.77833C25.8883 7.77833 27.445 8 28.8883 8.22167V13.3333H26.3333C23.8883 13.3333 23.3333 14.555 23.3333 16.1117V20H28.6667L27.7783 25.555H23.3333V40C32.7783 38.3233 40 30.0567 40 20.1117C40 9.05 31 0 20 0C9 0 0 9.05 0 20.1117Z" fill="black"/>
-                    </svg>
-                </Link>
-                <Link href="https://www.discord.com" className="ml-1 w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14">
-                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0)">
-                        <path d="M33.8615 7.48666C31.3115 6.33666 28.5782 5.48666 25.7198 5.00333C25.6944 4.99844 25.668 5.00159 25.6444 5.01234C25.6208 5.02309 25.6012 5.04091 25.5882 5.06333C25.2382 5.67833 24.8482 6.48 24.5748 7.11333C21.5433 6.66039 18.4613 6.66039 15.4298 7.11333C15.1254 6.41143 14.7821 5.72704 14.4015 5.06333C14.3886 5.04063 14.3691 5.02241 14.3455 5.0111C14.322 4.99978 14.2956 4.99591 14.2698 5C11.4132 5.48333 8.67982 6.33333 6.12816 7.485C6.10621 7.4942 6.08759 7.50991 6.07482 7.53C0.888158 15.155 -0.533509 22.5917 0.164824 29.935C0.166768 29.953 0.17235 29.9704 0.181233 29.9861C0.190115 30.0019 0.202111 30.0157 0.216491 30.0267C3.24381 32.2307 6.62039 33.9097 10.2048 34.9933C10.2298 35.001 10.2565 35.001 10.2815 34.9933C10.3065 34.9855 10.3286 34.9705 10.3448 34.95C11.1148 33.9167 11.8015 32.825 12.3882 31.6783C12.4232 31.6117 12.3898 31.5317 12.3198 31.505C11.2432 31.0995 10.2 30.6103 9.19982 30.0417C9.18185 30.0314 9.16671 30.0168 9.15575 29.9993C9.1448 29.9817 9.13837 29.9617 9.13705 29.9411C9.13573 29.9204 9.13955 29.8998 9.14818 29.881C9.15681 29.8622 9.16997 29.8458 9.18649 29.8333C9.39649 29.6783 9.60649 29.5167 9.80649 29.355C9.82449 29.3405 9.84618 29.3312 9.86913 29.3283C9.89208 29.3253 9.9154 29.3288 9.93649 29.3383C16.4815 32.2783 23.5698 32.2783 30.0382 29.3383C30.0593 29.3282 30.0829 29.3243 30.1061 29.3269C30.1294 29.3296 30.1515 29.3387 30.1698 29.3533C30.3698 29.5167 30.5782 29.6783 30.7898 29.8333C30.8065 29.8455 30.8199 29.8617 30.8288 29.8803C30.8377 29.899 30.8418 29.9195 30.8408 29.9402C30.8399 29.9608 30.8338 29.9809 30.8231 29.9986C30.8125 30.0163 30.7976 30.0311 30.7798 30.0417C29.7832 30.615 28.7465 31.1 27.6582 31.5033C27.6414 31.5094 27.6262 31.519 27.6135 31.5314C27.6008 31.5438 27.5908 31.5588 27.5844 31.5754C27.5779 31.5919 27.575 31.6097 27.576 31.6274C27.5769 31.6452 27.5816 31.6625 27.5898 31.6783C28.1898 32.8233 28.8765 33.9133 29.6315 34.9483C29.6472 34.9696 29.6691 34.9854 29.6941 34.9938C29.7192 35.0021 29.7462 35.0026 29.7715 34.995C33.3621 33.9144 36.7442 32.2346 39.7748 30.0267C39.7896 30.0163 39.802 30.0029 39.8112 29.9874C39.8204 29.9719 39.8262 29.9546 39.8282 29.9367C40.6615 21.4467 38.4315 14.07 33.9132 7.53333C33.9021 7.51209 33.8837 7.49553 33.8615 7.48666ZM13.3665 25.4633C11.3965 25.4633 9.77149 23.6817 9.77149 21.4967C9.77149 19.31 11.3648 17.53 13.3665 17.53C15.3832 17.53 16.9932 19.325 16.9615 21.4967C16.9615 23.6833 15.3682 25.4633 13.3665 25.4633ZM26.6582 25.4633C24.6865 25.4633 23.0632 23.6817 23.0632 21.4967C23.0632 19.31 24.6548 17.53 26.6582 17.53C28.6748 17.53 30.2848 19.325 30.2532 21.4967C30.2532 23.6833 28.6765 25.4633 26.6582 25.4633Z" fill="black"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0">
-                        <rect width="40" height="40" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                </Link>
+            <div className="flex gap-4 lg:gap-6 xl:gap-8 pt-4 pb-24 justify-center">
+                <Link href="https://www.google.com"><FontAwesomeIcon icon={faGoogle} size="2x" /></Link>
+                <Link href="https://www.github.com"><FontAwesomeIcon icon={faGithub} size="2x" /></Link>
+                <Link href="https://www.facebook.com"><FontAwesomeIcon icon={faFacebook} size="2x" /></Link>
+                <Link href="https://www.discord.com"><FontAwesomeIcon icon={faDiscord} size="2x" /></Link>
             </div>
+        </div>
+        <div className="w-32 h-32 rounded-2xl bg-white opacity-70 -mt-14 ml-140 absolute shadow-login_custom"></div>
         </div>
     </>
   );
