@@ -1,8 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import BlueYellow from "../../images/blueyellow.png"
-
-
 const Overpass = () => {
   return (
     <>

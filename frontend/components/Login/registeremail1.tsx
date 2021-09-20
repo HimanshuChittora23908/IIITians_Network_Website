@@ -1,6 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-
 const email = "iiitkotaemail@iiitkota.ac.in"
 
 const RegisterEmail1 = () => {

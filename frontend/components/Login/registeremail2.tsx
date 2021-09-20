@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Man from "../../images/man.webp";
 import Panda from "../../images/Panda.jpeg";

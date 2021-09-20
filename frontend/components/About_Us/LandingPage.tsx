@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import discord_main from '../../images/discord_main.png'
 import Frame3 from '../../images/Frame3.png'
 
 const LandingPage = () =>{
