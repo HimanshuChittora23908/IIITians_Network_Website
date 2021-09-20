@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import LoginBg from "../../images/loginbg.png"
 
 const email = "iiitkotaemail@iiitkota.ac.in"
 
