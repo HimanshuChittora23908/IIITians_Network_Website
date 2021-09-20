@@ -5,7 +5,6 @@ import { Navbar } from "../components/Home";
 const About: NextPage = () => {
   return (
     <>
-      <Navbar />
       <RegisterEmail1 />
     </>
   );
