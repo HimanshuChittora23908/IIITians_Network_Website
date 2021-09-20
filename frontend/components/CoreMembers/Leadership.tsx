@@ -12,7 +12,7 @@ interface Button {
 
 const ButtonList: Button[] = [
     {
-        role: "Leaderhip"
+        role: "Leadership"
     },
     {
         role: "Client Services"

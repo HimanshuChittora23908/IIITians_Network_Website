@@ -5,7 +5,7 @@ import Link from "next/link";
 interface Desc {
     name: string;
     position: string;
-    img: object;
+    img: StaticImageData;
 }
 
 const data: Desc[] = [
