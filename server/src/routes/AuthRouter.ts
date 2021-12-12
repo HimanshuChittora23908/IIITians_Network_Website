@@ -2,6 +2,9 @@ import express from "express";
 export const authRouter = express.Router();
 import passport from 'passport'
 
+authRouter.get('/', function(req,res){
+  res.redirect('/graphql');
+})
 authRouter.get('/auth/facebook', passport.authenticate('facebook'));
 
 authRouter.get('/auth/facebook/callback',passport.authenticate('facebook', { failureRedirect: '/login' }),
@@ -24,7 +27,7 @@ authRouter.get('/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] }));
 
 authRouter.get('/auth/google/callback', 
-passport.authenticate('google', { failureRedirect: '/login' , successRedirect: '/graphql'}),
+passport.authenticate('google', { failureRedirect: '/login' , successRedirect: '/graphql', session: true}),
 function(req, res) {
   // Successful authentication, redirect home.
   res.send("Logged In!")
