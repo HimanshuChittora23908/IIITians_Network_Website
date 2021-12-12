@@ -27,7 +27,7 @@ authRouter.get('/auth/google',
   passport.authenticate('google', { scope: ['profile', 'email'] }));
 
 authRouter.get('/auth/google/callback', 
-passport.authenticate('google', { failureRedirect: '/login' , successRedirect: '/graphql', session: true}),
+passport.authenticate('google', { failureRedirect: '/login' , successRedirect: '/graphql'}),
 function(req, res) {
   // Successful authentication, redirect home.
   res.send("Logged In!")
