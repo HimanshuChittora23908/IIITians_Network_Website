@@ -9,10 +9,11 @@ import { Resolvers } from './resolvers/Resolvers';
 import { sessionOption } from './config/express-session';
 import cookieparser from 'cookie-parser';
 import cors from 'cors';
+import helmet from 'helmet';
 
 import passport from 'passport';
 // import './config/OAuthProvider/github';
-// import './config/OAuthProvider/google';
+import './config/OAuthProvider/google';
 // import './config/OAuthProvider/linkedin';
 // import './config/OAuthProvider/discord';
 
@@ -32,6 +33,13 @@ import isAuth from './utils/isAuth'
   app.use(cors({
     credentials: true
   }))
+
+  app.use(
+    helmet({
+        contentSecurityPolicy: false,
+    })
+);
+
   // Passport Middleware
   app.use(passport.initialize())
   const passportSessionMiddleware = passport.session();

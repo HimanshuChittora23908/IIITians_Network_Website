@@ -33,7 +33,8 @@ const googlePassportConfig = new Strategy(
   {
     clientID: process.env.CLIENT_ID_GOOGLE as string,
     clientSecret: process.env.CLIENT_SECRET_GOOGLE as string,
-    callbackURL: "http://localhost:4000/auth/google/callback",
+    // callbackURL: "http://localhost:4000/auth/google/callback",
+    callbackURL: (process.env.NODE_ENV === "production") ? "https://iiit-network-website.herokuapp.com/auth/google/callback" : "http://localhost:4000/auth/google/callback",
   },
   async (accessToken, refreshToken, profile , done) => {
     // console.log(accessToken, profile)
