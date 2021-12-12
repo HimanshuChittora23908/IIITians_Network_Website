@@ -41,6 +41,7 @@
     "express-session": "^1.17.2",
     "graphql": "15.5.1",
     "graphql-passport": "^0.6.3",
+    "helmet": "^4.6.0",
     "https": "^1.0.0",
     "ioredis": "^4.27.8",
     "jsonwebtoken": "^8.5.1",
@@ -53,6 +54,7 @@
     "passport-google-oauth20": "^2.0.0",
     "passport-linkedin-oauth2": "^2.0.0",
     "reflect-metadata": "^0.1.10",
+    "supertokens-node": "^8.2.1",
     "ts-jest": "^27.0.5",
     "type-graphql": "^1.1.1"
   },
