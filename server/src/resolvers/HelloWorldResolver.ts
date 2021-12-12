@@ -21,7 +21,7 @@ export class HelloWorldResolver {
   @Query(() => UserClass, { nullable : true })
   async currentUser( @Ctx() ctx: Context ):Promise<DocumentType<UserClass, BeAnObject> | null>{
       const uid = ctx.req.session.passport!.user;
-      console.log(ctx.req.session);
+      console.log(ctx.req);
       const currentUser = await User.findById(uid);
       return currentUser;
   }
