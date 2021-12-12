@@ -20,8 +20,8 @@ export class HelloWorldResolver {
 
   @Query(() => UserClass, { nullable : true })
   async currentUser( @Ctx() ctx: Context ):Promise<DocumentType<UserClass, BeAnObject> | null>{
-      const uid = ctx.req.session.passport!.user;
       console.log(ctx.req);
+      const uid = ctx.req.session.passport!.user;
       const currentUser = await User.findById(uid);
       return currentUser;
   }
